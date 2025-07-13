@@ -1,11 +1,9 @@
 
 import './App.css';
-
 import { useEffect, useState } from 'react';
-
 import DarkMode from './Components/DarkMode';
-
 import InputVf from './Components/InputVF';
+import Counter from './Components/Counter';
 
 function App() {
 
@@ -24,6 +22,8 @@ function App() {
 
       <InputVf theme={mode} />
       <hr />
+    <Counter  theme={mode}/>
+    <hr/>
 
       <button
         onClick={toggleTheme}
@@ -35,6 +35,7 @@ function App() {
 
 
       <DarkMode theme={mode} />
+
 
 
     </div>
